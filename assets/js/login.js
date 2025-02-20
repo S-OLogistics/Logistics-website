@@ -20,7 +20,7 @@ function handleDriverLogin(event) {
       type: 'driver',
       ...driver
     }));
-    window.location.href = '/pages/driver_dashboard.html';
+    window.location.href = '../pages/driver_dashboard.html';
   } else {
     alert('Invalid credentials');
   }
@@ -38,7 +38,7 @@ function handleAdminLogin(event) {
       type: 'admin',
       ...admin
     }));
-    window.location.href = '/pages/admin_dashboard.html';
+    window.location.href = '../pages/admin_dashboard.html';
   } else {
     alert('Invalid credentials');
   }
@@ -46,7 +46,7 @@ function handleAdminLogin(event) {
 
 function handleLogout() {
   localStorage.removeItem('currentUser');
-  window.location.href = '/index.html';
+  window.location.href = '../index.html';
 }
 
 function bypassLogin(userType) {
@@ -57,5 +57,5 @@ function bypassLogin(userType) {
   };
   
   localStorage.setItem('currentUser', JSON.stringify(mockBypassUser));
-  window.location.href = userType === 'driver' ? '/pages/driver_dashboard.html' : '/pages/admin_dashboard.html';
+  window.location.href = userType === 'driver' ? '../pages/driver_dashboard.html' : '../pages/admin_dashboard.html';
 }

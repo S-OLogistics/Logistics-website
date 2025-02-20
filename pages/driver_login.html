@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Login - S&O Logistics</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/login_styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="/index.html">
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <rect x="10" y="60" width="80" height="30" fill="#2b4c7e"/>
+            <rect x="20" y="45" width="40" height="15" fill="#2b4c7e"/>
+            <circle cx="30" cy="90" r="8" fill="#333"/>
+            <circle cx="70" cy="90" r="8" fill="#333"/>
+          </svg>
+          <span>S&O Logistics</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="login-container">
+    <form class="login-form" onsubmit="return handleDriverLogin(event)">
+      <h2>Driver Login</h2>
+      <div class="form-group">
+        <label for="driver-id">Driver ID</label>
+        <input type="text" id="driver-id" required>
+      </div>
+      <div class="form-group">
+        <label for="driver-password">Password</label>
+        <input type="password" id="driver-password" required>
+      </div>
+      <button type="submit">Login</button>
+      <!-- <button type="button" class="bypass-button" onclick="bypassLogin('driver')">Bypass Login</button> -->
+    </form>
+  </main>
+
+  <script src="/assets/js/login.js"></script>
+</body>
+</html>

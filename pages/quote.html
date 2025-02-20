@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote - S&O Logistics</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/quote_styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="/index.html">
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <rect x="10" y="60" width="80" height="30" fill="#2b4c7e"/>
+            <rect x="20" y="45" width="40" height="15" fill="#2b4c7e"/>
+            <circle cx="30" cy="90" r="8" fill="#333"/>
+            <circle cx="70" cy="90" r="8" fill="#333"/>
+          </svg>
+          <span>S&O Logistics</span>
+        </a>
+      </div>
+      <ul>
+        <li><a href="/index.html#services">Services</a></li>
+        <li><a href="/index.html#tracking">Track Shipment</a></li>
+        <li><a href="/index.html#about">About Us</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/login.html" class="login-btn">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="quote-form">
+      <h2>Request a Quote</h2>
+      <p>Please fill out the form below to receive a quote tailored to your needs.</p>
+      <form id="quote-form" onsubmit="handleQuoteSubmit(event)">
+        <input type="hidden" name="access_key" value="b0c1a2d3-4e5f-6a7b-8c9d-e0f1g2h3i4j5">
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <div class="form-group">
+          <label for="pickup-location">Pickup Location:</label>
+          <input type="text" id="pickup-location" name="pickup_location" required>
+        </div>
+
+        <div class="form-group">
+          <label for="delivery-location">Delivery Location:</label>
+          <input type="text" id="delivery-location" name="delivery_location" required>
+        </div>
+
+        <div class="form-group">
+          <label for="weight">Weight (lbs):</label>
+          <input type="number" id="weight" name="weight" required>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Contact Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Contact Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Contact Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Get Quote</button>
+      </form>
+    </section>
+  </main>
+
+  <div id="confirmation-modal" class="modal">
+    <div class="modal-content">
+      <h2>Quote Request Submitted</h2>
+      <p>Thank you! You will receive an email with your quote shortly.</p>
+      <button onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>123 Trucking Lane</p>
+        <p>Logistics City, ST 12345</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/index.html">Careers</a></li>
+          <li><a href="/index.html">Privacy Policy</a></li>
+          <li><a href="/index.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

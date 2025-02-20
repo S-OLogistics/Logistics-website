@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - S&O Logistics</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/dashboard_styles.css">
+</head>
+<body>
+  <header>
+    <nav class="dashboard-nav">
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <rect x="10" y="60" width="80" height="30" fill="#2b4c7e"/>
+          <rect x="20" y="45" width="40" height="15" fill="#2b4c7e"/>
+          <circle cx="30" cy="90" r="8" fill="#333"/>
+          <circle cx="70" cy="90" r="8" fill="#333"/>
+        </svg>
+        <span>Admin Dashboard - S&O Logistics</span>
+      </div>
+      <div class="user-controls">
+        <span id="admin-name"></span>
+        <button onclick="handleLogout()">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <div class="dashboard-grid">
+      <section class="dashboard-card driver-management">
+        <h2>Driver Management</h2>
+        <div class="driver-list" id="driver-list"></div>
+        <button onclick="openAddDriverModal()">Add Driver</button>
+      </section>
+
+      <section class="dashboard-card route-management">
+        <h2>Route Management</h2>
+        <div class="route-assignments" id="route-assignments"></div>
+        <button onclick="openAddRouteModal()">Add Route</button>
+      </section>
+
+      <section class="dashboard-card announcements">
+        <h2>Announcements</h2>
+        <form id="announcement-form" onsubmit="return handleAnnouncementSubmit(event)">
+          <textarea id="announcement-text" required></textarea>
+          <button type="submit">Post Announcement</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="/assets/js/admin_dashboard.js"></script>
+</body>
+</html>

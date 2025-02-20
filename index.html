@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swift Trucking & Delivery</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <rect x="10" y="60" width="80" height="30" fill="#2b4c7e"/>
+          <rect x="20" y="45" width="40" height="15" fill="#2b4c7e"/>
+          <circle cx="30" cy="90" r="8" fill="#333"/>
+          <circle cx="70" cy="90" r="8" fill="#333"/>
+        </svg>
+        <span>S&O Logistics</span>
+      </div>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tracking">Track Shipment</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/login.html" class="login-btn">Sign In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Reliable Delivery Solutions</h1>
+        <p>Your trusted partner in nationwide freight and delivery services</p>
+        <a href="/pages/quote.html" class="cta-button" >Get a Quote</a>
+      </div>
+      <div class="truck-animation"></div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon freight"></div>
+          <h3>Cargo Transport</h3>
+          <p>We provide reliable cargo transport services, ensuring your goods are delivered safely and on time. Our experienced team handles all types of cargo, from small packages to large freight, with utmost care and efficiency.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon express"></div>
+          <h3>Express Deliveries</h3>
+          <p>Our express delivery service guarantees swift and secure transportation of your urgent shipments. With real-time tracking and dedicated support, we ensure that your deliveries arrive exactly when you need them.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon warehouse"></div>
+          <h3>On-Time Replies</h3>
+          <p>We pride ourselves on our commitment to customer service. Our team is dedicated to providing timely responses to all inquiries, ensuring you have the information you need to make informed decisions about your logistics needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracking" class="tracking">
+      <h2>Track Your Shipment</h2>
+      <div class="tracking-form">
+        <input type="text" id="tracking-number" placeholder="Enter tracking number">
+        <button onclick="trackShipment()">Track</button>
+      </div>
+      <div id="tracking-result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>123 Trucking Lane</p>
+        <p>Logistics City, ST 12345</p>
+        <p>Phone: (555) 123-4567</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/index.html">Careers</a></li>
+          <li><a href="/index.html">Privacy Policy</a></li>
+          <li><a href="/index.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/script.js"></script>
+</body>
+</html>

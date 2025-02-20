@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Dashboard - S&O Logistics</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="/assets/css/dashboard_styles.css">
+</head>
+<body>
+  <header>
+    <nav class="dashboard-nav">
+      <div class="logo">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <rect x="10" y="60" width="80" height="30" fill="#2b4c7e"/>
+          <rect x="20" y="45" width="40" height="15" fill="#2b4c7e"/>
+          <circle cx="30" cy="90" r="8" fill="#333"/>
+          <circle cx="70" cy="90" r="8" fill="#333"/>
+        </svg>
+        <span>Driver Dashboard - S&O Logistics</span>
+      </div>
+      <div class="user-controls">
+        <span id="driver-name"></span>
+        <button onclick="handleLogout()">Logout</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="dashboard-container">
+    <div class="dashboard-grid">
+      <section class="dashboard-card current-route">
+        <h2>Today's Route</h2>
+        <div id="route-details"></div>
+      </section>
+
+      <section class="dashboard-card pay-info">
+        <h2>Pay Information</h2>
+        <div id="pay-stub"></div>
+      </section>
+
+      <section class="dashboard-card upcoming-schedule">
+        <h2>Upcoming Schedule</h2>
+        <div id="schedule"></div>
+      </section>
+
+      <section class="dashboard-card notifications">
+        <h2>Notifications</h2>
+        <div id="notifications-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="/assets/js/driver_dashboard.js"></script>
+</body>
+</html>
